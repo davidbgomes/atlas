@@ -1,0 +1,24 @@
+body {
+  overscroll-behavior: contain;
+}
+
+.hamburgerButton{
+	font-size: 35px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+}
+
+.headerTitleDiv{
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+.headerTitleDiv h1{
+	color: white;
+	font-size: 30px;
+	margin:0;
+}

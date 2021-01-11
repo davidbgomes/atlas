@@ -1,0 +1,12 @@
+
+.showSideMenu{
+	z-index: 9;
+}
+
+.hideSideMenu{
+	display: none;
+}
+
+label{
+	font-size: 16px;
+}
