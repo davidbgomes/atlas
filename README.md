@@ -1,5 +1,8 @@
 # Atlas
 
+![alt text](https://i.imgur.com/tIPF5ns.png)
+
+
 ## Overview
 
 This is a React.js App with a Zoomable World Map. Check the Population and GDP from all around the world with a customizable map.
