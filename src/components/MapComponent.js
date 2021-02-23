@@ -28,7 +28,7 @@ const translateRange = (isMobile) =>{
 function MapComponent(props){
     return (
         <div className="mapDiv">
-            <ComposableMap data-tip="" projectionConfig={{ scale: `${isMobile ? 900 : 400}`}} style={{height:"-webkit-fill-available", width:"100%"}}>
+            <ComposableMap data-tip="" projectionConfig={{ scale: `${isMobile ? 900 : 400}`}} style={{height:"100vh", width:"100%"}}>
                 <ZoomableGroup
                     translateExtent={translateRange(isMobile)}
                 >
@@ -37,13 +37,6 @@ function MapComponent(props){
                     }
                     { props.isSphere &&
                         <Sphere stroke="#FF5533" strokeWidth={2} />
-                    }
-                    { props.isEquator &&
-                        <Line
-                            coordinates={[[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]}
-                            stroke="#F53"
-                            strokeWidth={2}
-                        />
                     }
                     <Geographies geography={geoUrl}>
                         {({ geographies }) =>
@@ -79,6 +72,13 @@ function MapComponent(props){
                             ))
                         }
                     </Geographies>
+                    { props.isEquator &&
+                        <Line
+                            coordinates={[[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]}
+                            stroke="#F53"
+                            strokeWidth={2}
+                        />
+                    }
                 </ZoomableGroup>
             </ComposableMap>
         </div>
