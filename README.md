@@ -17,5 +17,3 @@ Ant Design for the UI.
 In the project directory, run:
 
 ### `npm start`
-
-For Node server, in \src\server directory, run:
